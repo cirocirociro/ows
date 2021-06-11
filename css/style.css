@@ -1,0 +1,368 @@
+body{
+    margin: 0;
+    padding: 0;
+    -moz-osx-font-smoothing: grayscale;
+}
+.section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+.section .app-box{
+    position: absolute;
+    width: 17.5em;
+    height: 28.625em;
+    top: 20%;
+    left: 5em;
+    background-color: #FFF;
+    box-sizing: border-box;
+    box-shadow: 0 0 12px 0 rgba(0,0,0,.1),0 10px 30px 0 rgba(0,0,0,.2);
+    transition: transform .5s cubic-bezier(.77,0,.175,1);
+    border-radius: 10px;
+    z-index: 90;
+}
+.dl-icon{
+    text-align: center;
+    margin-top: 2em;
+    border-bottom: 1px solid #ddd;
+}
+.downloader__top-icon{
+    width: 90px;
+    height: 90px;
+}
+.fd{
+    font-size: 0.8125em;
+    line-height: 1.38462em;
+    font-weight: 400;
+    font-family: Fakt Pro Normal, "Fakt Pro Normal Cyr", "Fakt Pro Normal Grk", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #6a6d70;
+}
+.hrd{
+    font-weight: 400;
+    font-size: 1.375em;
+    line-height: 1.2;
+    padding: 0;
+    margin: 0;
+    font-family: FreightSans Pro Medium, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+}
+.dl-msg{
+    font-family: Fakt Pro Normal, "Fakt Pro Normal Cyr", "Fakt Pro Normal Grk", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    font-size: 0.875em;
+    color: #6a6d70;
+}
+.ftb{
+    width: 100%;
+}
+.da{
+    text-align: right;
+}
+.da svg{
+    width: 1.5em;
+    height: 1.5em;
+    fill: #409fff;
+}
+.dc{
+    margin-left: 10px;
+}
+.dn{
+    font-weight: 600;
+    font-family: FreightSans Pro Medium, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.finfo{
+    padding: 0;
+    margin: 0;
+    font-size: 0.75em !important;
+    display: inline;
+}
+.finfo::after{
+    content: '\00B7';
+    display: inline-block;
+    padding: 0 0.375em;
+    text-decoration: none;
+}
+.ftyp{
+    display: inline;
+    padding: 0;
+    margin: 0;
+    font-size: 0.75em;
+}
+.fcont{
+    margin-top: 1em;
+    border-bottom: 1px solid #ddd;
+}
+.dcont{
+    text-align: center;
+}
+.dbtn{
+    width: 10.7em;
+    height: 2.5em;
+    font-size: 1em;
+    box-sizing: border-box;
+    border-radius: 1.25em;
+    background-color: #409fff;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid #409fff;
+    margin: 0.5em auto 0;
+}
+.section .app-nav{
+    position: absolute;
+    width: 17.5em;
+    height: 2.5em;
+    background: #ffffff;
+    z-index: 20;
+    right: 0.5%;
+    top: 1.5%;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.nav-tb{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.nav-tb td{
+    height: 2.4em;
+    margin: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.nav-tb td:hover{
+    background-color: #eee;
+}
+.nav-text{
+    margin-top: 20px;
+    height: 2.5em;
+}
+.bdr{
+    border-right: 1px solid #ddd;
+}
+.cblock{
+    position: absolute;
+    z-index: 40;
+    left: 30%;
+    top: 30%
+}
+.cblock svg{
+    fill: #fff;
+    color: #161616
+}
+.blk-txt1{
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 0.8em;
+    font-family: DIN-Bold, sans-serif;
+    color: #ddd;
+}
+.blk-txt2{
+    font-size: 50px;
+    font-weight: 900;
+    font-family: DIN-Bold, sans-serif;
+    color: #ddd;
+    margin-top: 0.2em;
+    border-bottom: 3px solid #fa8072;
+}
+.blk-sub-txt{
+    color: #FFF;
+    width: 20em;
+    margin-top: 0.8em;
+    font-weight: 400;
+    font-family: FreightSans Pro Medium, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+}
+.blk-sub-action{
+    margin-top: 2em;
+    width: 200px;
+}
+.sub-action{
+    background-color: #fa8072;
+    color: #FFF;
+
+    font-size: 20px;
+    padding: 15px;
+    width: 200px;
+    text-decoration: none;
+}
+
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.lmodal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; 
+    /*height: 53vh;*/
+    border-radius: 10px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .linfo{
+    font-size: 0.8125em;
+    line-height: 1.38462em;
+    font-weight: 400;
+    font-family: Fakt Pro Normal, "Fakt Pro Normal Cyr", "Fakt Pro Normal Grk", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #6a6d70;  
+    margin-top: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  .ainst{
+    font-family: Fakt Pro Normal, "Fakt Pro Normal Cyr", "Fakt Pro Normal Grk", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+  }
+  .email{
+      width: 70%;
+      padding: 5px;
+      font-size: 15px;
+      border: 1px solid #409fff;
+      font-weight: 600;
+  }
+  .password{
+      width: 70%;
+      padding: 5px;
+      font-size: 15px;  
+      border: 1px solid #409fff;
+      font-weight: 600;
+  }
+  .error{
+      color: red;
+      font-size: 12px;
+      font-family: Fakt Pro Normal, "Fakt Pro Normal Cyr", "Fakt Pro Normal Grk", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+      text-align: center;
+      font-weight: 500;
+      display: none;
+  }
+  .txt-fback{
+      font-style: italic;
+      font-family: Fakt Pro Normal, "Fakt Pro Normal Cyr", "Fakt Pro Normal Grk", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+      color: #5B6064;
+      margin: 0;
+      display: inline;
+  }
+  .fspinner{
+      display: inline;
+  }
+  .fback{
+      height: 30px;
+      display: none;
+  }
+  @media only screen and (max-width: 1000px) {
+    .modal-content {
+        background-color: #fefefe;
+        margin: 10% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 40%; 
+        height: 53vh;
+        border-radius: 10px;
+      }
+  }
+  @media only screen and (max-width: 800px) {
+    .modal-content {
+        background-color: #fefefe;
+        margin: 10% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 55%; 
+        height: 53vh;
+        border-radius: 10px;
+      }
+  }
+  @media only screen and (max-width: 700px) {
+    .modal-content {
+        background-color: #fefefe;
+        margin: 10% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 65%; 
+        height: 53vh;
+        border-radius: 10px;
+      }
+  }
+  @media only screen and (max-width: 600px) {
+    .modal-content {
+        background-color: #fefefe;
+        margin: 10% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 75%; 
+        height: 53vh;
+        border-radius: 10px;
+      }
+  }
+  @media only screen and (max-width: 500px) {
+    .modal-content {
+        background-color: #fefefe;
+        margin: 10% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; 
+        height: 53vh;
+        border-radius: 10px;
+      }
+  }
+  @media only screen and (max-width: 420px) {
+    .modal-content {
+        background-color: #fefefe;
+        margin: 10% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 95%; 
+        height: 53vh;
+        border-radius: 10px;
+      }
+  }
+  @media only screen and (max-width: 320px) {
+    .modal-content {
+        background-color: #fefefe;
+        margin: 10% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 100%; 
+        height: 53vh;
+        border-radius: 10px;
+      }
+  }
